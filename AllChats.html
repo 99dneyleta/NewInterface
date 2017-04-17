@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>All Chats</title>
+
+      <link rel="stylesheet" href="MyProfile.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+	<body class="body-chats">
+		<div id="header">
+	
+	<div style="margin-top: 2vh" id="nav-icon2" onclick="openNav()">
+		
+			
+  		<span></span>
+  		<span></span>
+  		<span></span>
+  		<span></span>
+  		<span></span>
+  		<span></span>
+	</div>
+	<img  id="chats-find" src="imgs/find.png" onclick="openFindNav()">
+		</div>
+	<div class="chats-user">
+		<img class="chats-photo" src="imgs/chats/profile1.jpeg">
+        <div style="background-color: deeppink;" class="chats-status-doNotDisturb">
+        </div>
+        <div class="chat-head">
+            <span class="chat-time-position">11:21</span>
+            <span class="chat-status">Busy</span>
+        </div>
+        <div class="chats-name-last-msg">
+            <span>Nick Collins</span>
+		</div>
+        <div class="last-msg-readed">
+            <span>Hey, how it is going?</span>
+        </div>
+        </div>
+        
+		<div class="chats-user">
+		<img  class="chats-photo" src="imgs/chats/profile2.jpeg">
+            <div style="background-color: darkviolet;" class="chats-status-doNotDisturb">
+                
+        </div>
+            <div class="chat-head">
+            <span class="chat-time-position">Mn</span>
+            <span class="chat-status">Working</span>
+        </div>
+        <div class="chats-name-last-msg">
+            <span>John Kolins</span>
+		</div>
+        <div class="last-msg-not-readed">
+            <span>Hey, how it is going?</span>
+        </div>
+		</div>
+		<div class="chats-user">
+		<img class="chats-photo" src="imgs/chats/profile3.jpg">
+            <div style="background-color: #69F0AE;" class="chats-status-doNotDisturb">
+		</div>
+            <div class="chat-head">
+            <span class="chat-time-position">Thu</span>
+            <span class="chat-status">Reading</span>
+        </div>
+        <div class="chats-name-last-msg">
+            <span >John Kolins</span>
+		</div>
+        <div class="last-msg-not-readed">
+            <img class="chats-sended" class="chats-status-doNotDisturb" src="imgs/photo.jpg">
+            <span class="chats-msg-pos">Hey, how it is going?</span>
+        </div>
+        </div>
+		<div class="chats-user">
+		<img class="chats-photo" src="imgs/chats/profile4.jpeg">
+            <div style="background-color: #FDD835;" class="chats-status-doNotDisturb">
+		</div>
+            
+        </div>
+		<div class="chats-user">
+		<img class="chats-photo" src="imgs/chats/profile5.jpeg">
+            <div style="background-color: #795548;" class="chats-status-doNotDisturb">
+		</div>
+        </div>
+	
+	<div id="mySidenav" class="sidenav">
+  		<div class="head">
+            
+		<img class="back" src="imgs/photo.jpg">
+                
+			<div class="usrname"><span class="menu-name">Рома Мошняга <br><div class="m-status">status</div></span></div>
+		<br>
+		<div class="menu-pos">
+		<span class="menu-status">online</span>
+			<hr>
+		</div>
+			<ul>
+				<li><img class="menu-img" src="imgs/chats.png"><span>Chats</span></li>
+				<li><img class="menu-img" src="imgs/friends.png"><span>Friends</span></li>
+                <li><img class="menu-img" src="imgs/blocked.png"><span>Black List</span></li>
+				<li><img class="menu-img" src="imgs/Settings.png"><span>Settings</span><hr></li>
+				<li class="logout"><img class="menu-img" src="imgs/logout.png"><span>Log out</span></li>
+			</ul>
+		</div>
+		
+</div>
+        
+        <div id="myFindSidenav" class="find-sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeFindNav()">&times;</a>
+            <input class="chats-find-search" type="text" placeholder="Search Name">
+  
+</div>
+
+
+
+<script>
+    
+    
+    $(document).ready(function(){
+		$('#nav-icon2').click(function(){
+		$(this).toggleClass('open');
+			
+			});
+		});
+    
+	function openNav() {
+			var k = document.getElementById("mySidenav").style.width;
+		if(k == "50vw") {
+			closeNav();
+		} 
+		else {
+			document.getElementById("nav-icon2").style.marginLeft = "50vw";
+    		document.getElementById("mySidenav").style.width = "50vw";
+				
+			}	
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("nav-icon2").style.marginLeft = "4vw";
+}
+		</script>
+        
+        
+        <script>
+function openFindNav() {
+    document.getElementById("myFindSidenav").style.width = "100vw";
+    document.getElementById("nav-icon2").style.marginLeft = "-100vw";
+    document.getElementById("chats-find").style.marginRight = "120vw";
+//    document.getElementById("header").style.marginLeft = "100vw";
+}
+
+function closeFindNav() {
+    document.getElementById("myFindSidenav").style.width = "0";
+    document.getElementById("nav-icon2").style.marginLeft = "4vw";
+    document.getElementById("chats-find").style.marginRight = "4vw";
+//    document.getElementById("header").style.marginLeft = "0";
+}
+</script>
+</body>
+</html>
