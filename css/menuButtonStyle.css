@@ -166,7 +166,7 @@ hr {
 	padding-left: 0;
 }
 
-ul {
+.ul {
     margin-top: 5vh;
 	list-style: none;
 	color: white;
@@ -175,9 +175,10 @@ ul {
 li span {
 	font-size: 4em;
     padding-left: 2vw;
+    color: white;
 }
 
-li {
+.li {
     margin-top: 5vh;
 }
 

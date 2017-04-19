@@ -1,0 +1,38 @@
+.friends-info {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    opacity: 0.7;
+}
+
+
+.friends-name {
+position: absolute;
+    display: inline-block;
+    color: white;
+    font-size: 3em;
+    line-height: 200px;
+    width: 76vw;
+    padding: 1px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+.friends-status {
+    color: white;
+    font-size: 2em;
+    float: right;
+    padding-right: 15px;
+    
+    
+}
+
+
+
+
+
+
