@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>All Chats</title>
-    
-    <link rel="stylesheet" href="css/allChats.css">
-    <link rel="stylesheet" href="css/body.css">
+
+    <link rel="stylesheet" href="css/blackList.css">
     <link rel="stylesheet" href="css/menuButtonStyle.css">
+    <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/find.css">
     <link rel="stylesheet" href="css/usersIcon.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -14,8 +14,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 	<body class="body-chats">
-        <div id="header">
-	<div style="margin-top: 2vh" id="nav-icon2" onclick="openNav()">	
+		<div id="header">
+	
+	<div style="margin-top: 2vh" id="nav-icon2" onclick="openNav()">
   		<span></span>
   		<span></span>
   		<span></span>
@@ -25,65 +26,28 @@
 	</div>
 	<img  id="chats-find" src="imgs/find.png" onclick="openFindNav()">
 		</div>
-	<div class="chats-user">
-		<img class="chats-photo" src="imgs/chats/profile1.jpeg">
+	<div class="user" >
+		<img onclick="openBlackListRemove()" class="chats-photo" src="imgs/chats/profile1.jpeg">
         <div style="background-color: deeppink;" class="chats-status-doNotDisturb">
         </div>
-        <div class="chat-head">
-            <span class="chat-time-position">11:21</span>
-            <span class="chat-status">Busy</span>
-        </div>
-        <div class="chats-name-last-msg">
-            <span>Nick Collins</span>
+        <div class="name">
+            <span>Nick Collins<br><span class="status">status</span></span>
 		</div>
-        <div class="last-msg-readed">
-            <span>Hey, how it is going?</span>
-        </div>
+        <img class="remove" src="imgs/remove.png">
         </div>
         
-		<div class="chats-user">
+		<div class="user">
 		<img  class="chats-photo" src="imgs/chats/profile2.jpeg">
             <div style="background-color: darkviolet;" class="chats-status-doNotDisturb">
                 
-        </div>
-            <div class="chat-head">
-            <span class="chat-time-position">Mn</span>
-            <span class="chat-status">Working</span>
-        </div>
-        <div class="chats-name-last-msg">
-            <span>John Kolins</span>
+        </div>  
+        <div class="name">
+            <span onclick="openBlackListRemove()">John Kolins<br><span class="status">status</span></span>
 		</div>
-        <div class="last-msg-not-readed">
-            <span>Hey, how it is going?</span>
-        </div>
+            <img class="remove" src="imgs/remove.png">
 		</div>
-		<div class="chats-user">
-		<img class="chats-photo" src="imgs/chats/profile3.jpg">
-            <div style="background-color: #69F0AE;" class="chats-status-doNotDisturb">
-		</div>
-            <div class="chat-head">
-            <span class="chat-time-position">Thu</span>
-            <span class="chat-status">Reading</span>
-        </div>
-        <div class="chats-name-last-msg">
-            <span >John Kolins</span>
-		</div>
-        <div class="last-msg-not-readed">
-            <img class="chats-sended" class="chats-status-doNotDisturb" src="imgs/photo.jpg">
-            <span class="chats-msg-pos">Hey, how it is going?</span>
-        </div>
-        </div>
-		<div class="chats-user">
-		<img class="chats-photo" src="imgs/chats/profile4.jpeg">
-            <div style="background-color: #FDD835;" class="chats-status-doNotDisturb">
-		</div>
-            
-        </div>
-		<div class="chats-user">
-		<img class="chats-photo" src="imgs/chats/profile5.jpeg">
-            <div style="background-color: #795548;" class="chats-status-doNotDisturb">
-		</div>
-        </div>
+		
+        
 	
 	<div id="mySidenav" class="sidenav">
   		<div class="head">
@@ -111,6 +75,9 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeFindNav()">&times;</a>
             <input class="chats-find-search" type="text" placeholder="Search Name">
   
+</div>
+        
+        <div id="myBlRemove" class="bl-remove">
 </div>
 
 
@@ -145,6 +112,27 @@ function closeNav() {
         
         
         <script>
+
+	function openBlackListRemove() {
+        var k = document.getElementById("myBlRemove").style.width;
+		if(k == "10vw") {
+			closeBlackListRemove();
+		} 
+		else {
+    		document.getElementById("myBlRemove").style.width = "10vw";
+				
+			}	
+}
+            
+            
+            
+            function closeBlackListRemove() {
+                document.getElementById("myBlRemove").style.width = "0vw";
+            }
+                
+</script>
+        
+               <script>
 function openFindNav() {
     document.getElementById("myFindSidenav").style.width = "100vw";
     document.getElementById("nav-icon2").style.marginLeft = "-100vw";
