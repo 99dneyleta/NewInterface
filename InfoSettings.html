@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="css/infoSettings.css">
+  <title>All Chats</title>
+    <link rel="stylesheet" href="css/back-arrow.css">
+    <link rel="stylesheet" href="css/friends.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/menuButtonStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+	<body class="body-chats">
+		<div id="header">
+	<img src="imgs/back.png" class="padding" class="back-arrow">
+	
+	<div id="mySidenav" class="sidenav">
+  		<div class="head">
+            
+		<img class="back" src="imgs/photo.jpg">
+                
+			<div class="usrname"><span class="menu-name">Рома Мошняга <br><div class="m-status">status</div></span></div>
+		<br>
+		<div class="menu-pos">
+		<span class="menu-status">online</span>
+			<hr>
+		</div>
+			<ul class="ul">
+				<li class="li"><img class="menu-img" src="imgs/chats.png"><span>Chats</span></li>
+				<li class="li"><img class="menu-img" src="imgs/friends.png"><span>Friends</span></li>
+                <li class="li"><img class="menu-img" src="imgs/blocked.png"><span>Black List</span></li>
+                <li class="li"><img class="menu-img" src="imgs/find.png"><span>Find</span></li>
+				<li class="li"><img class="menu-img" src="imgs/Settings.png"><span>Settings</span><hr></li>
+                
+				<li class="logout"><img class="menu-img" src="imgs/logout.png"><span>Log out</span></li>
+			</ul>
+		</div>
+            </div>	
+</div>
+        
+        
+        <h1 class="first-title"> Name</h1>
+        <div class="center">
+        <input placeholder="Set..." type="text" class="input-name">
+        </div>
+        <h1 class="title">Gender</h1>
+        <div class="center">
+        <h1 id="male" class="gender" onclick="changeGender(1)">Male</h1>
+            <img  id="setMale" class="male" src="imgs/male.png">
+            <img id="setFamale" class="famale" src="imgs/female.png">
+        <h1 id="fem" class="gender" onclick="changeGender(2)">Famale</h1>
+        </div>
+            
+        <h1 class="title">Birthday</h1>
+        <div class="center">
+        <select class="month">
+            <option class="first-m">Month</option>
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+            <option>Apr</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>Aug</option>
+            <option>Sept</option>
+            <option>Oct</option>
+            <option>Nov</option>
+            <option>Dec</option>
+        </select>
+        <input class="numb" type="number" placeholder="Day">
+            
+        <input class="numb" type="number" placeholder="Year">
+    
+        </div>
+        <h1 class="title">About me</h1>
+        <div class="center">
+        <textarea  class="about-me">I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. 
+        </textarea>
+      
+        </div>
+        
+        <div class="center">
+        <input type="button" class="save" value="Save">
+        </div>
+        
+        
+ 
+        
+
+
+
+<script>
+     function changeGender(numb) {
+    var el =document.getElementsByTagName("h1")[2],
+    text = "textContent" in el ? "textContent" : "innerText";
+         console.log(numb);
+         if(numb == 1) {
+             document.getElementById("setFamale").style.display = "none";
+             document.getElementById("setMale").style.display = "inline-block";
+         }
+         else {
+             document.getElementById("setMale").style.display = "none";
+             document.getElementById("setFamale").style.display = "inline-block";
+             
+         }
+         
+         
+     }
+    
+    $(document).ready(function(){
+		$('#nav-icon2').click(function(){
+		$(this).toggleClass('open');
+			
+			});
+		});
+    
+</script>
+</body>
+</html>

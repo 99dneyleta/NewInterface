@@ -1,0 +1,10 @@
+.show-more {
+    margin-top: 2px;
+    width: 100vw;
+    height: 4vh;
+    background: rgba(0,0,0,0.3);
+    border: 0;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}

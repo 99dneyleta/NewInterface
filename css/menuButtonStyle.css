@@ -13,7 +13,7 @@
   -webkit-transition: .5s ease-in-out;
   -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  transition: .5s ease-in-out;*/
   cursor: pointer;
 }
 
@@ -212,6 +212,7 @@ li hr {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    transition: .3s ease-in-out; 
 }
 
 .sidenav a {
@@ -220,7 +221,7 @@ li hr {
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .sidenav a:hover, .offcanvas a:focus{

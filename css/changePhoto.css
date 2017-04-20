@@ -1,0 +1,43 @@
+
+
+
+
+.center {
+   width: 100%;
+    text-align: center;
+}
+
+
+
+.left {
+    margin-right: 5vw;
+      width: 30%;
+    height 5vh;
+    margin-top: 85vh;
+    color: white;
+    font-size: 2em;
+    border: none;
+    background: #00B8D4;
+    border-radius: 50px;
+}
+
+
+
+.right {
+    margin-left: 5vw;
+    width: 30%;
+    height 5vh;
+    margin-top: 85vh;
+    color: white;
+    font-size: 2em;
+    border: none;
+    background: #00B8D4;
+    border-radius: 50px;
+}
+
+
+
+.padding {
+    height: 6.5vh;
+    padding-left: 1vw;
+}

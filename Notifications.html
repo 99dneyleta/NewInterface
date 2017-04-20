@@ -2,9 +2,10 @@
 <html >
 <head>
   <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/mainSettings.css">
+    <link rel="stylesheet" href="css/notification.css">
   <title>All Chats</title>
     <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/back-arrow.css">
     <link rel="stylesheet" href="css/friends.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/menuButtonStyle.css">
@@ -14,15 +15,7 @@
 </head>
 	<body class="body-chats">
 		<div id="header">
-	
-	<div style="margin-top: 2vh" id="nav-icon2" onclick="openNav()">
-  		<span></span>
-  		<span></span>
-  		<span></span>
-  		<span></span>
-  		<span></span>
-  		<span></span>
-	</div>
+	<img src="imgs/back.png" class="padding" class="back-arrow">
 	
 	<div id="mySidenav" class="sidenav">
   		<div class="head">
@@ -47,33 +40,45 @@
 		</div>
             </div>	
 </div>
+        <div class="centr">
+        <h1 class="part">Status</h1>
+        </div>
         
-        <h1 class="slim-header">Info</h1>
-        <h1 class="slim-header">Status&Notification</h1>
-        <h1 class="slim-header">Change Photo</h1>
-        <h1 class="slim-header">Change password</h1>
-        <h1 class="slim-header">Delete Profile</h1>
+        <hr class="hr">
+        <div class="center">
+        <input class="text-status" type="text" placeholder="Status">
+        <input  class="color" type="color" name="favcolor" value="#1976D2">
+        </div>
+        <hr class="hr">
+        
+        <h1 class="part">Notification</h1>
+        <div class="center">
+        <span class="txt">On/Off</span>
+            <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+        
+<span class="txt1">Change sound</span>   
+        
+        <select class="change-sound">
+            <option>Sound1</option>
+            <option>Sound2</option>
+            <option>Sound3</option>
+        </select>
+            </div>
         
         
-<!--        <ul class="ul-settings"
-            <li class="li-set">Info</li>
-            <hr class="hr">
-            <li class="li-set">Status&Notification</li>
-            <hr class="hr">
-            <li class="li-set">Change Photo</li>
-            <hr class="hr">
-            <li class="li-set">Delete Profile</li>
-            <hr class="hr">
-            <li class="li-set">Change password</li>
-        </ul>
->-->
+ 
         
 
 
 
 <script>
-    
-    
+   
     $(document).ready(function(){
 		$('#nav-icon2').click(function(){
 		$(this).toggleClass('open');
@@ -81,6 +86,13 @@
 			});
 		});
     
-        </script>
+   
+
+		</script>
+        
+        
+        <script>
+
+</script>
 </body>
 </html>

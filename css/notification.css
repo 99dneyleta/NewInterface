@@ -1,0 +1,135 @@
+.center {
+    width: 100vw;
+    text-align: center;
+}
+
+
+
+.part {
+    text-align: center;
+}
+
+
+
+.hr {
+    width: 100vw;
+}
+
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+
+.text-status {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border: none;
+    text-align: center;
+    width: 50vw;
+    height: 3vh;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+    font-size: 2em;
+    color: white;
+}
+
+
+
+.color {
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0);
+    
+}
+
+
+
+.onoffswitch {
+        margin-left: 3vw;
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #E3E3E3; border-radius: 36px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 36px; padding: 0; line-height: 36px;
+    font-size: 16px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #FFFFFF; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #FFFFFF; color: #666666;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 36px; margin: 0px;
+    background: #A1A1A1;
+    position: absolute; top: 0; bottom: 0;
+    right: 20px;
+    border: 2px solid #E3E3E3; border-radius: 36px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    background-color: #27A1CA; 
+}
+
+
+
+.change-sound {
+    font-size: 2em;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    text-align: center;
+    margin-left: 3vw;
+    outline: 0px;
+}
+
+
+
+.txt {
+    font-size: 2em;
+    color: white;
+}
+
+
+
+.txt1 {
+   font-size: 2em;
+    color: white;
+    margin-left: 5vw;
+}
+
+
+
+.padding {
+    height: 6.5vh;
+    padding-left: 1vw;
+}
+
+
+

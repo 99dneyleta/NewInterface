@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>All Chats</title>
-    <script src="js/menu.js"></script>
-    <link rel="stylesheet" href="css/allChats.css">
+<script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/globalFind.css">
+    <link rel="stylesheet" href="css/friends.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/menuButtonStyle.css">
     <link rel="stylesheet" href="css/find.css">
-    <link rel="stylesheet" href="css/usersIcon.css">
+    <link rel="stylesheet" href="css/usersIcon.css">  
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 	<body class="body-chats">
-        <div id="header">
-	<div style="margin-top: 2vh" id="nav-icon2" onclick="openNav()">	
+		<div id="header">
+	
+	<div style="margin-top: 2vh" id="nav-icon2" onclick="openNav()">
   		<span></span>
   		<span></span>
   		<span></span>
@@ -25,65 +27,70 @@
 	</div>
 	<img  id="chats-find" src="imgs/find.png" onclick="openFindNav()">
 		</div>
-	<div class="chats-user">
+	<div class="user">
 		<img class="chats-photo" src="imgs/chats/profile1.jpeg">
         <div style="background-color: deeppink;" class="chats-status-doNotDisturb">
         </div>
-        <div class="chat-head">
-            <span class="chat-time-position">11:21</span>
-            <span class="chat-status">Busy</span>
+        <div class="friends-info">
+            <span class="friends-activity">Dancing</span>
         </div>
-        <div class="chats-name-last-msg">
+        <span class="friends-status">online</span>
+        <div class="friends-name">
             <span>Nick Collins</span>
 		</div>
-        <div class="last-msg-readed">
-            <span>Hey, how it is going?</span>
-        </div>
         </div>
         
-		<div class="chats-user">
+		<div class="user">
 		<img  class="chats-photo" src="imgs/chats/profile2.jpeg">
             <div style="background-color: darkviolet;" class="chats-status-doNotDisturb">
                 
         </div>
-            <div class="chat-head">
-            <span class="chat-time-position">Mn</span>
-            <span class="chat-status">Working</span>
+            <div class="friends-info">
+            <span class="friends-activity">Working</span>
         </div>
-        <div class="chats-name-last-msg">
-            <span>John Kolins</span>
-		</div>
-        <div class="last-msg-not-readed">
-            <span>Hey, how it is going?</span>
-        </div>
-		</div>
-		<div class="chats-user">
-		<img class="chats-photo" src="imgs/chats/profile3.jpg">
-            <div style="background-color: #69F0AE;" class="chats-status-doNotDisturb">
-		</div>
-            <div class="chat-head">
-            <span class="chat-time-position">Thu</span>
-            <span class="chat-status">Reading</span>
-        </div>
-        <div class="chats-name-last-msg">
-            <span >John Kolins</span>
-		</div>
-        <div class="last-msg-not-readed">
-            <img class="chats-sended" class="chats-status-doNotDisturb" src="imgs/photo.jpg">
-            <span class="chats-msg-pos">Hey, how it is going?</span>
-        </div>
-        </div>
-		<div class="chats-user">
-		<img class="chats-photo" src="imgs/chats/profile4.jpeg">
-            <div style="background-color: #FDD835;" class="chats-status-doNotDisturb">
-		</div>
+            <span class="friends-status">online</span>
             
+            <span class="friends-name">John Kolins</span>
+		</div>
+        <div class="user">
+		<img class="chats-photo" src="imgs/chats/profile1.jpeg">
+        <div style="background-color: deeppink;" class="chats-status-doNotDisturb">
         </div>
-		<div class="chats-user">
-		<img class="chats-photo" src="imgs/chats/profile5.jpeg">
-            <div style="background-color: #795548;" class="chats-status-doNotDisturb">
+        <div class="friends-info">
+            <span class="friends-activity">Dancing</span>
+        </div>
+        <span class="friends-status">online</span>
+        <div class="friends-name">
+            <span>Nick Collins</span>
 		</div>
         </div>
+        
+		<div class="user">
+		<img  class="chats-photo" src="imgs/chats/profile2.jpeg">
+            <div style="background-color: darkviolet;" class="chats-status-doNotDisturb">
+                
+        </div>
+            <div class="friends-info">
+            <span class="friends-activity">Working</span>
+        </div>
+            <span class="friends-status">online</span>
+            
+            <span class="friends-name">John Kolins</span>
+		</div>
+        <div class="user">
+		<img class="chats-photo" src="imgs/chats/profile1.jpeg">
+        <div style="background-color: deeppink;" class="chats-status-doNotDisturb">
+        </div>
+        <div class="friends-info">
+            <span class="friends-activity">Dancing</span>
+        </div>
+        <span class="friends-status">online</span>
+        <div class="friends-name">
+            <span>Nick Collins</span>
+		</div>
+        </div>
+        <input type="button" class="show-more" value="Show more">
+
 	
 	<div id="mySidenav" class="sidenav">
   		<div class="head">
@@ -100,12 +107,12 @@
 				<li class="li"><img class="menu-img" src="imgs/chats.png"><span>Chats</span></li>
 				<li class="li"><img class="menu-img" src="imgs/friends.png"><span>Friends</span></li>
                 <li class="li"><img class="menu-img" src="imgs/blocked.png"><span>Black List</span></li>
-                <li class="li"><img class="menu-img" src="imgs/find.png"><span>Find</span></li>
+                 <li class="li"><img class="menu-img" src="imgs/find.png"><span>Find</span></li>
 				<li class="li"><img class="menu-img" src="imgs/Settings.png"><span>Settings</span><hr></li>
-                
 				<li class="logout"><img class="menu-img" src="imgs/logout.png"><span>Log out</span></li>
 			</ul>
 		</div>
+		
 		
 </div>
         
@@ -127,6 +134,7 @@
 			});
 		});
     
-        </script>
+
+</script>
 </body>
 </html>
