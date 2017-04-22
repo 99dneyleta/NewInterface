@@ -14,7 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 	<body class="body-chats">
-		<div id="header">
+		<div class="header">
 	
 	<div style="margin-top: 2vh" id="nav-icon2" onclick="openNav()">
   		<span></span>
@@ -25,7 +25,20 @@
   		<span></span>
 	</div>
 	<img  id="chats-find" src="imgs/find.png" onclick="openFindNav()">
+            <div class="requests">
+             <div class="pos">
+                 <div class="left" onclick="swipeLeft()" id="leftSwipe">
+             <span class="btn">Sent </span>
+                     <hr class="slide" id="underline">
+                 </div>
+                 <div class="right" onclick="swipeRight()" id="rightSwipe">
+             <span class="btn">Received</span>
+                 </div>
+             </div>
+             
+        </div>
 		</div>
+         
 	<div class="user">
 		<img class="chats-photo" src="imgs/chats/profile1.jpeg">
         <div style="background-color: deeppink;" class="chats-status-doNotDisturb">
@@ -97,6 +110,18 @@
 			
 			});
 		});
+    
+    
+    
+    function swipeRight() {
+       document.getElementById("underline").style.marginLeft = "100%";
+    }
+    
+    
+    
+    function swipeLeft() {
+        document.getElementById("underline").style.marginLeft = "0%";
+    }
     
 
 </script>
