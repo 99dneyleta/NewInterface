@@ -31,3 +31,26 @@ function closeFindNav() {
     document.getElementById("chats-find").style.marginRight = "4vw";
 //    document.getElementById("header").style.marginLeft = "0";
 }
+
+
+
+function openMaNav() {
+    var k = document.getElementById("ma-mySidenav").style.height;
+    console.log(k);
+    if(k == "18vh") {
+        closeMaNav();
+    }
+    else {
+        document.getElementById("ma-mySidenav").style.height = "18vh";
+        document.getElementById("ma-mySidenav").style.width = "50vw";
+
+    }
+
+}
+
+
+function closeMaNav() {
+    console.log("2");
+    document.getElementById("ma-mySidenav").style.height = "0vh";
+    document.getElementById("ma-mySidenav").style.width = "0vw";
+}

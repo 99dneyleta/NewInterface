@@ -29,6 +29,9 @@
 		</div>
          <div class="requests">
              <div class="pos">
+                 <div class="swipe-fr" id="friendsSwipe" onclick="swipeBack()">
+                 <span class="btn">All Friends</span>
+                 </div>
                  <div class="left" onclick="swipeLeft()" id="leftSwipe">
              <span class="btn">Sent </span>
                      <hr class="slide" id="underline">
@@ -122,6 +125,11 @@
     
     function swipeLeft() {
         document.getElementById("underline").style.marginLeft = "0%";
+    }
+    
+    
+    function swipeBack() {
+        document.getElementById("underline").style.marginLeft = "-100%";
     }
     
 
