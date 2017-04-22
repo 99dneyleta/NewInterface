@@ -9,12 +9,13 @@
     overflow-x: hidden;
     transition: 1s;
     transition-delay: 0.2s;
+    min-height: 70px;
 }
 
 
 
 #chats-find {
-    margin-right: 4vw;
+    margin-right: 2vw;
     margin-top: 2vh;
     float: right;
    width: 60px;
@@ -56,6 +57,7 @@
     text-align: center;
     font-size: 2em;
     font-style: 'Lato', sans-serif;
+    min-height: 70px;
 }
 
 

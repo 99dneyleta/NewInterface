@@ -8,6 +8,8 @@
 
 
 .chats-user {
+    
+    margin-top: -0.3%;
 	width: 100%;
 	height: 200px;
 	background-color: white;
@@ -84,11 +86,3 @@
     vertical-align: sub;
 }
 
-
-
-
-
-.menu-chat-pos {
-    margin-top: 2vh;
-    margin-right: 4vw;
-}
