@@ -1,6 +1,7 @@
 .padding {
     height: 6.5vh;
     margin-left: 1%;
+    min-height: 70px;
 }
 
 
@@ -75,6 +76,28 @@ textarea:focus, input:focus, select:focus{
 
 
 
+
+#head {
+    margin-top: -0.3%;
+    z-index: -1;
+    width: 100%;
+    height: 6.5vh;
+    background: rgba(0,0,0,0.4);
+    transition: margin-right .5s;
+    margin-right: 0;
+    min-height: 70px;
+}
+
+
+
+
+.set {
+    height: 200%;
+}
+
+
+
+
 .numb {
         color: white;
     font-size: 1.5em;
@@ -98,6 +121,14 @@ textarea:focus, input:focus, select:focus{
     text-align: center;
         text-align-last: center;
   height: 4vh;
+}
+
+
+
+html, body {
+    height: 200%;
+    margin: 0;
+    padding: 0;
 }
 
 

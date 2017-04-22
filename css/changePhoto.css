@@ -40,4 +40,5 @@
 .padding {
     height: 6.5vh;
     padding-left: 1vw;
+    min-height: 70px;
 }
